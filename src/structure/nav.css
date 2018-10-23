@@ -1,0 +1,18 @@
+nav {
+    display: block;
+    position: fixed;
+    width: 100%;
+    background-color: #ffffffde;
+    z-index: 9999;
+    top: 0;
+}
+
+.menu {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10em;
+}
+
+.menu .item {
+
+}

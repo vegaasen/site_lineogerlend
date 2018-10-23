@@ -1,0 +1,12 @@
+.wishlists {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10em;
+}
+
+.wishlist {
+    max-height: 70vh;
+    height: 70vh;
+    align-items: center;
+    display: inline-grid;
+}

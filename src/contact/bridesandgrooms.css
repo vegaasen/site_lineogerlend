@@ -1,0 +1,38 @@
+.tabList {
+    text-align: center;
+    max-height: 45px;
+    margin-bottom: 45px;
+}
+
+.tabList ul {
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.tabList ul li {
+    float: left;
+    position: relative;
+    display: block;
+}
+
+.tabList ul li span {
+    background: rgba(94, 154, 142, 0.15);
+    display: block;
+    color: #3e3e3e;
+    font-weight: 600;
+    padding: 7px 15px;
+}
+
+.tabList ul li span.active {
+    background-color: #5e9a8e;
+    color: #fff;
+}
+
+.tabs .persons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10em;
+}

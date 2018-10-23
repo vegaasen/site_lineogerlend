@@ -1,26 +1,41 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
+import React, { Component, Fragment } from 'react';
+import NavComponent from './structure/NavComponent';
+import FooterComponent from './structure/FooterComponent';
+import BackdropComponent from './backdrop/BackdropComponent';
+import InformationComponent from './information/InformationComponent';
+import WishlistsComponent from './wishlist/WishlistsComponent';
+import ContactComponent from './contact/ContactComponent';
+import TeaserComponent from './teaser/TeaserComponent';
+import Container from './structure/Container';
+import SectionComponent from './SectionComponent';
+import RSVPComponent from './information/RSVPComponent';
+
 import './App.css';
+import 'typeface-great-vibes';
+import 'typeface-dosis';
 
 class App extends Component {
-  render() {
+  render () {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
+      <Fragment>
+        <div className="App">
+          <NavComponent/>
+          <BackdropComponent/>
+          <InformationComponent/>
+          <TeaserComponent image='/images/teaser1.jpeg' teaser='yep' caption='yep' margin={false}/>
+          <Container green={true}>
+            <div>
+              <SectionComponent title="Svar utbedes" white={true}/>
+              <RSVPComponent/>
+            </div>
+          </Container>
+          <Container>
+            <WishlistsComponent/>
+          </Container>
+          <ContactComponent/>
+          <FooterComponent/>
+        </div>
+      </Fragment>
     );
   }
 }
