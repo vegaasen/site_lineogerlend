@@ -19,8 +19,8 @@
     max-width: 100%;
     vertical-align: middle;
     border: 0;
-    width: 360px;
-    height: 260px;
+    width: 500px;
+    height: 360px;
     float: right;
 }
 
@@ -50,6 +50,11 @@
     color: #a9a9a9;
     position: relative;
     padding-left: 22px;
+}
+
+.event .details ul li a {
+    font-weight: normal;
+    color: #a9a9a9;
 }
 
 .event-icon {

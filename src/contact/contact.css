@@ -2,10 +2,15 @@
     margin: 50px 0;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 10em;
+    grid-gap: 2em;
 }
 
 .contact .person {
     max-height: 100vh;
     height: 100vh;
+}
+
+.grooming {
+    width: 60vw;
+    margin: 0 auto;
 }

@@ -102,3 +102,7 @@ select.form-control {
     -ms-transition: all 0.3s;
     transition: all 0.3s;
 }
+
+.controls p {
+    margin-bottom: 20px !important;
+}

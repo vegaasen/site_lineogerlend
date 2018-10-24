@@ -22,7 +22,7 @@ class App extends Component {
           <NavComponent/>
           <BackdropComponent/>
           <InformationComponent/>
-          <TeaserComponent image='/images/teaser1.jpeg' teaser='yep' caption='yep' margin={false}/>
+          <TeaserComponent image='/images/teaser1.jpeg' teaser='' caption='-.' margin={false}/>
           <Container green={true}>
             <div>
               <SectionComponent title="Svar utbedes" white={true}/>
@@ -32,6 +32,7 @@ class App extends Component {
           <Container>
             <WishlistsComponent/>
           </Container>
+          <TeaserComponent image='/images/teaser2.jpg' teaser='' caption='todo: litt farger då veittu. få med flagget.' margin={false}/>
           <ContactComponent/>
           <FooterComponent/>
         </div>

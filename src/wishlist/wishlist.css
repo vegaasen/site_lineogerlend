@@ -2,11 +2,42 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 10em;
+    margin-top: -50px;
+}
+
+.wishlist:hover {
+    background-color: #2a2a2a;
 }
 
 .wishlist {
-    max-height: 70vh;
-    height: 70vh;
+    max-height: 90vh;
+    height: 90vh;
     align-items: center;
     display: inline-grid;
+    position: relative;
+    cursor: pointer;
+}
+
+.wishlist img {
+    max-width: 100%;
+}
+
+.wishlist .bottom {
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+}
+
+.wishlist .bottom span a {
+    text-decoration: none;
+    color: #479c8e;
+}
+
+.wishlist .bottom span {
+    border: 1px solid #479c8e;
+    padding: 0.5em 1.5em;
+}
+
+.wishlist .bottom h1 {
+    font-weight: lighter;
 }

@@ -1,5 +1,5 @@
-import { Fragment } from 'react';
 import * as React from 'react';
+import { Fragment } from 'react';
 import './backdrop.css';
 
 export default class BackdropComponent extends React.Component {
@@ -13,13 +13,9 @@ export default class BackdropComponent extends React.Component {
             <div className='identifier'>
               <h2 className='who'>Line &amp; Erlend</h2>
               <div className='alternative'>
-                <h4>Vi gifter oss</h4>
+                <h4>17.08.2019</h4>
               </div>
             </div>
-          </div>
-          <div className='date'>
-            <h4>Datoen ❤</h4>
-            <span className="actual">11 AUG 2019</span>
           </div>
         </div>
       </Fragment>

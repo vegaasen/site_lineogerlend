@@ -1,7 +1,11 @@
 .teaser {
-    background-position: 52% -84%;
+    background-position: 52% -96%;
     background-size: cover;
     padding: 160px 0;
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    filter: grayscale(100%);
 }
 
 .teaser h2 {

@@ -2,26 +2,30 @@ import * as React from 'react';
 import Person from './Person';
 import './bridesandgrooms.css';
 
+const forlovede = [
+  {name: 'Thea Tomter', title: 'Forlover', image: '/images/people/thea.jpg', social: {facebook: '', twitter: ''}},
+  {name: 'Ragnhild Granli', title: 'Forlover', image: '/images/people/raggen.jpg', imageTop: '-159px', social: {facebook: '', twitter: ''}},
+  {name: 'Thomas Mathiassen', title: 'Forlover', image: '/images/people/thomas.jpg', social: {facebook: '', twitter: ''}},
+  {name: 'Vegard Aasen', title: 'Forlover', image: '/images/people/vegard.jpg', social: {facebook: '', twitter: ''}},
+];
+
+const toastmaster = {
+  name: 'Hans Henrik',
+  title: 'Toastmaster 🍾',
+  description: `
+  For innmelding av taler og lignende, kontakt Hans Henrik.
+  `,
+  image: '/images/people/hansh2.jpg',
+  social: {},
+};
+
 export default class BridesAndGrooms extends React.PureComponent {
-
-  constructor () {
-    super();
-    this.state = {current: 'grooms'}
-  }
-
-  selectType = type => this.setState({current: type});
 
   render () {
     return (
       <div>
-        <div className='tabList'>
-          <ul>
-            <li onClick={() => this.selectType('grooms')}>Brudegutter</li>
-            <li onClick={() => this.selectType('brides')}>Brudejenter</li>
-          </ul>
-        </div>
         <div className='tabs'>
-          {this.state.current === 'grooms' ? <Grooms/> : <Brides/>}
+          <Toastmaster/><Bridespeople/>
         </div>
       </div>
     );
@@ -29,30 +33,12 @@ export default class BridesAndGrooms extends React.PureComponent {
 
 }
 
-export class Grooms extends React.PureComponent {
+export class Bridespeople extends React.PureComponent {
 
   render () {
-    return (
-      <div className='persons'>
-        <Person name='hehe'/>
-        <Person name='hehe'/>
-        <Person name='hehe'/>
-      </div>
-    );
+    return <div className='persons'>{forlovede.map(forlover => <Person {...forlover}/>)}</div>;
   }
 
 }
 
-export class Brides extends React.PureComponent {
-
-  render () {
-    return (
-      <div className='persons'>
-        <Person name='hehe'/>
-        <Person name='hehe'/>
-        <Person name='hehe'/>
-      </div>
-    );
-  }
-
-}
+const Toastmaster = props => <Person {...toastmaster} huge={true}/>;

@@ -28,7 +28,7 @@ export default class EventComponent extends React.Component {
         <div className='details'>
           <h3>{this.props.title}</h3>
           <ul>
-            <li><span className='event-icon'><FontAwesomeIcon icon={faMapMarker}/></span> {this.props.location.caption}</li>
+            <li><a href={this.props.location.link}><span className='event-icon'><FontAwesomeIcon icon={faMapMarker}/></span> {this.props.location.caption}</a></li>
             <li><span className='event-icon'><FontAwesomeIcon icon={faClock}/></span> {this.props.when}</li>
           </ul>
           <p>
