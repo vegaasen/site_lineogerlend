@@ -36,7 +36,7 @@ export default class BridesAndGrooms extends React.PureComponent {
 export class Bridespeople extends React.PureComponent {
 
   render () {
-    return <div className='persons'>{forlovede.map(forlover => <Person {...forlover}/>)}</div>;
+    return <div className='persons'>{forlovede.map((forlover, i) => <Person key={i} {...forlover}/>)}</div>;
   }
 
 }

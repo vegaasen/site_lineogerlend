@@ -35,7 +35,7 @@ export default class InformationComponent extends React.Component {
         <Container>
           <div>
             <SectionComponent title='Tid & sted'/>
-            {events.map(event => <EventComponent {...event}/>)}
+            {events.map((event, i) => <EventComponent key={i} {...event}/>)}
           </div>
         </Container>
       </>

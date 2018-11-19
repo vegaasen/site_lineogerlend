@@ -5,12 +5,13 @@ const TeaserComponent = props => {
   const bold = props.bold === undefined ? true : props.bold;
   const margin = props.margin === undefined ? true : props.margin;
   return (
-    <div className='teaser' style={{backgroundImage: `url(${props.image})`, margin: (margin ? '20px 0' : '0')}}>
+    <div className='teaser' style={{backgroundImage: `url(${props.image})`, margin: (margin ? '20px 0' : '0'), minHeight: (props.teaser ? '' : 'min-height: 40vh')}}>
       <div className='container'>
         <h2 style={{fontWeight: (bold ? 'bold' : 'normal')}}>
           {props.teaser && <span>{props.teaser}</span>}
           {props.caption}
         </h2>
+        <span className='teaser--sub_caption'>{props.subCaption}</span>
       </div>
     </div>
   );

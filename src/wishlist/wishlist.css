@@ -1,3 +1,10 @@
+.wishlist__wrapper p {
+    color: #767878;
+    line-height: 1.8em;
+    width: 50%;
+    margin: 0 auto;
+}
+
 .wishlists {
     display: grid;
     grid-template-columns: repeat(3, 1fr);

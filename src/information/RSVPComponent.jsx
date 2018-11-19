@@ -11,7 +11,7 @@ const RSVPComponent = props => (
         <div><input type="text" name="name" className="form-control" placeholder="Gjester"/></div>
         <div>
           <select className="form-control" name="events">
-            <option disabled selected>Jeg kommer</option>
+            <option disabled defaultChecked={true}>Jeg kommer</option>
             <option>Ja</option>
             <option>Nei</option>
           </select>

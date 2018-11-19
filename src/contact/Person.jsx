@@ -13,8 +13,8 @@ const Person = (props) => {
         <span>{props.title}</span>
         {props.description && <p>{props.description}</p>}
         <ul className='social-links'>
-          <li><a href='#'><FontAwesomeIcon icon={faFacebookF} /></a></li>
-          <li><a href='#'><FontAwesomeIcon icon={faTwitter} /></a></li>
+          <li><a href='#'><FontAwesomeIcon className='social-element' icon={faFacebookF} /></a></li>
+          <li><a href='#'><FontAwesomeIcon className='social-element' icon={faTwitter} /></a></li>
         </ul>
       </div>
     </div>

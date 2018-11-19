@@ -1,0 +1,36 @@
+.count-down-clock {
+    margin: 25vh;
+}
+
+.clock {
+    color: #5e9a8e;
+    overflow: hidden;
+    display: inline-flex;
+}
+
+.clock .box {
+    background: rgba(255, 255, 255, 0.9);
+    width: 23.5%;
+    text-align: center;
+    padding: 10px 25px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -o-border-radius: 5px;
+    -ms-border-radius: 5px;
+    border-radius: 5px;
+    border: 5px solid rgba(0, 0, 0, 0.1);
+    margin: 0 5px;
+}
+
+.clock .box div {
+    font-size: 40px;
+    font-size: 3.33rem;
+    font-weight: 600;
+    line-height: 1em;
+}
+
+.clock .box span {
+    font-size: 14px;
+    font-size: 0.77778rem;
+    text-transform: uppercase;
+}

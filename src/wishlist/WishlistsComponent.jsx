@@ -4,18 +4,21 @@ import SectionComponent from '../SectionComponent';
 import './wishlist.css';
 
 const wishlists = [
-  {title: 'Illums', link: {to: '', caption: 'Illums'}, image: '/images/wishlists/illums.png'},
-  {title: 'Kitchn', link: {to: '', caption: 'Illums'}, image: '/images/wishlists/kitchn.jpg'},
-  {title: 'Christiania Glassmagasin', link: {to: '', caption: 'Christiania Glassmagasin'}, image: '/images/wishlists/christiania_glassmagasin.png'},
+  {title: 'Illums', link: {to: '', caption: 'Illums'}, image: '/images/wishlists/illums.png', size: '70%'},
+  {title: 'Kitchn', link: {to: '', caption: 'Illums'}, image: '/images/wishlists/kitchn.jpg', size: '40%'},
+  {title: 'Christiania Glassmagasin', link: {to: '', caption: 'Christiania Glassmagasin'}, image: '/images/wishlists/christiania_glassmagasin.png', size: '70%'},
 ];
 
 export default class WishlistsComponent extends React.Component {
   render () {
     return (
-      <div>
+      <div className='wishlist__wrapper'>
         <SectionComponent title='Ønskelister'/>
+        <p className='tc'>
+          Dette er et utvalg av det vi ønsker oss til vårt bryllup. (mer tekst?)
+        </p>
         <section className='wishlists'>
-          {wishlists.map(wishlist => <WishlistComponent {...wishlist} />)}
+          {wishlists.map((wishlist, i) => <WishlistComponent key={i} {...wishlist} />)}
         </section>
       </div>
     );

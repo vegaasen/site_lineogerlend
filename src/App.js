@@ -9,10 +9,12 @@ import TeaserComponent from './teaser/TeaserComponent';
 import Container from './structure/Container';
 import SectionComponent from './SectionComponent';
 import RSVPComponent from './information/RSVPComponent';
+import DrivingDirections from './information/DrivingDirections';
 
 import './App.css';
 import 'typeface-great-vibes';
 import 'typeface-dosis';
+import CountdownTimer from './countdown/CountdownTimer';
 
 class App extends Component {
   render () {
@@ -22,7 +24,7 @@ class App extends Component {
           <NavComponent/>
           <BackdropComponent/>
           <InformationComponent/>
-          <TeaserComponent image='/images/teaser1.jpeg' teaser='' caption='-.' margin={false}/>
+          <TeaserComponent image='/images/teaser1.jpeg' teaser='' margin={false}/>
           <Container green={true}>
             <div>
               <SectionComponent title="Svar utbedes" white={true}/>
@@ -34,6 +36,11 @@ class App extends Component {
           </Container>
           <TeaserComponent image='/images/teaser2.jpg' teaser='' caption='todo: litt farger då veittu. få med flagget.' margin={false}/>
           <ContactComponent/>
+          <CountdownTimer/>
+          <Container green={true}>
+            <SectionComponent title="<untitled>" white={true}/>
+            <DrivingDirections/>
+          </Container>
           <FooterComponent/>
         </div>
       </Fragment>

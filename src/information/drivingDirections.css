@@ -1,0 +1,34 @@
+.details {
+    min-height: 50vh;
+}
+
+.details--element p {
+    line-height: 1.8em;
+}
+
+.details--element {
+    width: 30%;
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    display: inline-block;
+}
+
+.details .details--element:first-child{
+    padding-right: 75px;
+    text-align: right;
+    border-right: 1px solid #548a7f;
+}
+
+.details .details--element:last-child{
+    padding-left: 75px;
+    text-align: left;
+}
+
+.details h3 {
+    font-size: 25px;
+    font-size: 1.38889rem;
+    font-weight: 600;
+    margin: 0 0 0.8em;
+}

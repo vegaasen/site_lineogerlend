@@ -18,6 +18,10 @@
     filter: grayscale(50%);
 }
 
+.person--huge {
+    margin-bottom: 2em;
+}
+
 .person--huge .person--image {
     height: 700px;
 }
@@ -69,4 +73,19 @@
     color: #7cafa5;
     display: block;
     text-align: center;
+}
+
+.social-element {
+    border-radius: 50%;
+    color: white;
+    background-color: #7cafa5;
+    padding: 7px;
+    width: 16px !important;
+    margin-right: 5px;
+    transition: all .5s;
+}
+
+.social-element:hover {
+    color: #7cafa5;
+    background-color: white;
 }

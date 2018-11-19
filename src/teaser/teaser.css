@@ -14,6 +14,8 @@
     font-size: 4.16667rem;
     color: #fff;
     margin: 0;
+    letter-spacing: 5px;
+    margin-bottom: 10px;
 }
 
 .teaser h2 span {
@@ -22,4 +24,8 @@
     font-size: 1.66667rem;
     display: block;
     margin-bottom: 0.6em;
+}
+
+.teaser .teaser--sub_caption {
+    color: white;
 }
