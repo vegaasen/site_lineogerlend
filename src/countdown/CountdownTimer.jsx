@@ -1,11 +1,11 @@
 import * as React from 'react';
 import Countdown from 'react-countdown-now';
-import './countdown.css';
+import './countdown.scss';
 
 const CountdownTimer = () => {
-  const renderer = ({ days, hours, minutes, seconds, completed }) => {
+  const renderer = ({days, hours, minutes, seconds, completed}) => {
     if (completed) {
-      return "🎉";
+      return '<h1>🎉</h1>';
     } else {
       return <div className='clock'>
         <div className='box'>
@@ -28,7 +28,7 @@ const CountdownTimer = () => {
     }
   };
   return <div className='count-down-clock'>
-    <Countdown date={Date.now() + 150000} renderer={renderer} />
+    <Countdown date={new Date(2019, 7, 17, 15, 0, 0)} renderer={renderer}/>
   </div>;
 };
 
