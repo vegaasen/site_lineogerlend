@@ -1,6 +1,6 @@
 import * as React from 'react';
 import Person from './Person';
-import './bridesandgrooms.css';
+import './bridesandgrooms.scss';
 
 const forlovede = [
   {name: 'Thea Tomter', title: 'Forlover', image: '/images/people/thea.jpg', social: {facebook: '', twitter: ''}},
@@ -23,9 +23,10 @@ export default class BridesAndGrooms extends React.PureComponent {
 
   render () {
     return (
-      <div>
+      <div id='toastmaster'>
         <div className='tabs'>
-          <Toastmaster/><Bridespeople/>
+          <Toastmaster/>
+          <Bridespeople/>
         </div>
       </div>
     );

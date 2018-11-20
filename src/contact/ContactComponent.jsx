@@ -1,8 +1,8 @@
 import * as React from 'react';
-import './contact.css';
 import BridesAndGrooms from './BridesAndGrooms';
 import SectionComponent from '../SectionComponent';
 import Container from '../structure/Container';
+import './contact.css';
 
 export default class ContactComponent extends React.Component {
 

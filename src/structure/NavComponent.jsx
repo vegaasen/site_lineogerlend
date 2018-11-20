@@ -11,9 +11,9 @@ export default class NavComponent extends React.Component {
         <div className='menu'>
           <div className='item tc'>
             <ul className='nav--inline'>
-              <li><a href='#'>Tid &amp; sted</a></li>
-              <li><a href='#'>Svar utbedes</a></li>
-              <li><a href='#'>Ønskeliste</a></li>
+              <li><a href='#timeandplace'>Tid &amp; sted</a></li>
+              <li><a href='#rsvp'>Svar utbedes</a></li>
+              <li><a href='#wishlist'>Ønskeliste</a></li>
             </ul>
           </div>
           <div className='item tc'>
@@ -23,11 +23,10 @@ export default class NavComponent extends React.Component {
               <span className='second'>E</span>
             </h1>
           </div>
-          <div className='item tc'>
-            <ul className='nav--inline'>
-              <li><a href='#'>Ønskeliste</a></li>
-              <li><a href='#'>Toastmaster &amp; forlovere</a></li>
-              <li><a href='#'>Overnatting</a></li>
+          <div className='item tr'>
+            <ul className='nav--inline la'>
+              <li><a href='#toastmaster'>Toastmaster &amp; forlovere</a></li>
+              <li><a href='#spendTheNight'>Overnatting</a></li>
             </ul>
           </div>
         </div>

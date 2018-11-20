@@ -3,18 +3,36 @@ import './drivingDirections.scss';
 
 const DrivingDirections = () => {
   return (
-    <div className='details'>
+    <div className='details' id='spendTheNight'>
       <div className='details--element details__left'>
-        <h3>blabla</h3>
+        <h3>Staur gård</h3>
         <p>
-          industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s
+          Vi håper flest mulig velger å overnatte på Staur gård hvor vi også overnatter.
+          <br/>
+          Da er brunsj dagen derpå inkludert i prisen.
+          <br/>
+          Overnatting her må bestilles <strong className='underline'>så fort som mulig</strong> og kan gjøres på:<br/>
+          <a href="mailto:vertskap@staur.no">vertskap@staur.no</a>
+          <br/>
+          <a href="tel:415 71 222">415 71 222</a>
+        </p>
+        <p>
+          For mer info se <a href="http://www.staur.no" target="_blank">staur.no</a>
         </p>
       </div>
       <div className='details--element details__right'>
-        <h3>blabla</h3>
-        <p>
-          industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s
-        </p>
+        <h3>Låve i nærleiken</h3>
+        <div>
+          Noen andre alternativer:
+          <br/>
+          <ul>
+            <li>Ein låve i nærleiken</li>
+            <li>Scandic Hamar</li>
+            <li>Clarion Astoria</li>
+            <li>First Hotel Victoria</li>
+          </ul>
+          ...eller andre
+        </div>
       </div>
     </div>
   );

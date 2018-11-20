@@ -10,6 +10,7 @@
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 10em;
     margin-top: -50px;
+    text-align: center;
 }
 
 .wishlist:hover {
@@ -43,6 +44,12 @@
 .wishlist .bottom span {
     border: 1px solid #479c8e;
     padding: 0.5em 1.5em;
+}
+
+.wishlist .bottom span:hover,
+.wishlist .bottom span a:hover {
+    color: white;
+    background-color: #479c8e;
 }
 
 .wishlist .bottom h1 {

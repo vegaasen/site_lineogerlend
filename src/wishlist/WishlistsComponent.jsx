@@ -1,7 +1,7 @@
 import * as React from 'react';
 import WishlistComponent from './WishlistComponent';
 import SectionComponent from '../SectionComponent';
-import './wishlist.css';
+import './wishlist.scss';
 
 const wishlists = [
   {title: 'Illums', link: {to: '', caption: 'Illums'}, image: '/images/wishlists/illums.png', size: '70%'},
@@ -12,7 +12,7 @@ const wishlists = [
 export default class WishlistsComponent extends React.Component {
   render () {
     return (
-      <div className='wishlist__wrapper'>
+      <div className='wishlist__wrapper' id='wishlist'>
         <SectionComponent title='Ønskelister'/>
         <p className='tc'>
           Dette er et utvalg av det vi ønsker oss til vårt bryllup. (mer tekst?)

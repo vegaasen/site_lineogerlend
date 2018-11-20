@@ -24,7 +24,7 @@ class App extends Component {
           <NavComponent/>
           <BackdropComponent/>
           <InformationComponent/>
-          <TeaserComponent image='/images/teaser1.jpeg' teaser='' margin={false}/>
+          <TeaserComponent image='/images/backdrop4.jpg' teaser='' margin={false} position='52% -85%'/>
           <Container green={true}>
             <div>
               <SectionComponent title="Svar utbedes" white={true}/>
@@ -34,11 +34,11 @@ class App extends Component {
           <Container>
             <WishlistsComponent/>
           </Container>
-          <TeaserComponent image='/images/teaser2.jpg' teaser='' caption='todo: litt farger då veittu. få med flagget.' margin={false}/>
+          <TeaserComponent image='/images/teaser2.jpg' teaser='' margin={false} position='52% -153%' gray={false} filter='50%' height='50vh'/>
           <ContactComponent/>
           <CountdownTimer/>
           <Container green={true}>
-            <SectionComponent title="<untitled>" white={true}/>
+            <SectionComponent title="Overnatting" white={true}/>
             <DrivingDirections/>
           </Container>
           <FooterComponent/>

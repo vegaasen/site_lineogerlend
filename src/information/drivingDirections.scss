@@ -1,10 +1,14 @@
 .details {
   min-height: 50vh;
+  text-align: center;
   h3 {
     font-size: 25px;
     font-size: 1.38889rem;
     font-weight: 600;
     margin: 0 0 0.8em;
+  }
+  a {
+    color: white;
   }
   .details--element {
     width: 30%;
@@ -16,12 +20,12 @@
     p {
       line-height: 1.8em;
     }
-    :first-child {
+    &:first-child {
       padding-right: 75px;
       text-align: right;
       border-right: 1px solid #548a7f;
     }
-    :last-child {
+    &:last-child {
       padding-left: 75px;
       text-align: left;
     }

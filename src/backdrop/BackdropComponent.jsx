@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { Fragment } from 'react';
-import './backdrop.css';
+import './backdrop.scss';
 
 export default class BackdropComponent extends React.Component {
 

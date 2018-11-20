@@ -33,7 +33,7 @@ export default class InformationComponent extends React.Component {
     return (
       <>
         <Container>
-          <div>
+          <div id='timeandplace'>
             <SectionComponent title='Tid & sted'/>
             {events.map((event, i) => <EventComponent key={i} {...event}/>)}
           </div>
