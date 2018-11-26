@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from 'react';
+import React, { Component } from 'react';
 import NavComponent from './structure/NavComponent';
 import FooterComponent from './structure/FooterComponent';
 import BackdropComponent from './backdrop/BackdropComponent';
@@ -9,17 +9,26 @@ import TeaserComponent from './teaser/TeaserComponent';
 import Container from './structure/Container';
 import RSVPComponent from './information/RSVPComponent';
 import DrivingDirections from './information/DrivingDirections';
+import ReactGA from 'react-ga';
 
 import './App.scss';
 import 'typeface-great-vibes';
 import 'typeface-dosis';
 import CountdownTimer from './countdown/CountdownTimer';
 
+const initializeReactGA = () => {
+  ReactGA.initialize('UA-129862709-1');
+  ReactGA.pageview('/index.html');
+  console.info("Initializing GA")
+};
+
+initializeReactGA();
+
 class App extends Component {
   render () {
     return (
-      <Fragment>
-        <div className="App">
+      <>
+        <div className="App" id='home'>
           <NavComponent/>
           <BackdropComponent/>
           <InformationComponent/>
@@ -38,7 +47,7 @@ class App extends Component {
           </Container>
           <FooterComponent/>
         </div>
-      </Fragment>
+      </>
     );
   }
 }

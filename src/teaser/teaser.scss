@@ -1,3 +1,5 @@
+@import '../globals';
+
 .teaser {
   text-align: center;
   background-size: cover;
@@ -6,6 +8,10 @@
   -moz-filter: grayscale(100%);
   -o-filter: grayscale(100%);
   filter: grayscale(100%);
+  -webkit-background-size: cover !important;;
+  -moz-background-size: cover !important;;
+  -o-background-size: cover !important;;
+  background-size: cover !important;
   h2 {
     font-family: "Great Vibes", cursive;
     font-size: 75px;
@@ -24,5 +30,9 @@
   }
   .teaser--sub_caption {
     color: white;
+  }
+  @media (max-width: $normalPhone) {
+    background-attachment: scroll !important;
+    background-size: 150% !important;
   }
 }

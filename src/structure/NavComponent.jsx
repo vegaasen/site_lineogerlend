@@ -8,7 +8,7 @@ export default class NavComponent extends React.Component {
 
   render () {
     return (
-      <nav id='top'>
+      <nav>
         <div className='menu-slapped'>
           <div id="menuToggle">
             <input type="checkbox" />
@@ -16,7 +16,7 @@ export default class NavComponent extends React.Component {
             <span></span>
             <span></span>
             <ul id='burgerized'>
-              <li><a href='#top'>Hjem</a></li>
+              <li><a href='#home'>Hjem</a></li>
               <li><a href='#timeandplace'>Tid &amp; sted</a></li>
               <li><a href='#rsvp'>Svar utbedes</a></li>
               <li><a href='#wishlist'>Ønskeliste</a></li>

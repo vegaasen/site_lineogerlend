@@ -12,7 +12,7 @@ const events = [
       link: 'https://goo.gl/maps/Ct33Zi3u3Km',
     },
     when: '17 August 2019, 15:00',
-    description: 'when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.',
+    description: '(Erlend! trenger tekster! :P)',
     image: '/images/placement/vangkirka.jpg',
   },
   {
@@ -22,7 +22,7 @@ const events = [
       link: 'https://goo.gl/maps/maVSb6hyoWH2',
     },
     when: '17 August 2019, 16:30',
-    description: 'when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.',
+    description: '(Erlend! trenger tekster! :P)',
     image: '/images/placement/staur.jpg',
   },
 ];
