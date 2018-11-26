@@ -1,7 +1,7 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faDove } from '@fortawesome/free-solid-svg-icons'
-import './SectionComponent.css';
+import './SectionComponent.scss';
 
 const SectionComponent = props => {
   return (

@@ -1,57 +1,64 @@
-.wishlist__wrapper p {
+@import '../globals';
+
+.wishlist__wrapper {
+  p {
     color: #767878;
     line-height: 1.8em;
     width: 50%;
     margin: 0 auto;
-}
-
-.wishlists {
+  }
+  .wishlists {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 10em;
     margin-top: -50px;
     text-align: center;
-}
-
-.wishlist:hover {
-    background-color: #2a2a2a;
-}
-
-.wishlist {
-    max-height: 90vh;
-    height: 90vh;
-    align-items: center;
-    display: inline-grid;
-    position: relative;
-    cursor: pointer;
-}
-
-.wishlist img {
-    max-width: 100%;
-}
-
-.wishlist .bottom {
-    bottom: 0;
-    position: absolute;
-    width: 100%;
-}
-
-.wishlist .bottom span a {
-    text-decoration: none;
-    color: #479c8e;
-}
-
-.wishlist .bottom span {
-    border: 1px solid #479c8e;
-    padding: 0.5em 1.5em;
-}
-
-.wishlist .bottom span:hover,
-.wishlist .bottom span a:hover {
-    color: white;
-    background-color: #479c8e;
-}
-
-.wishlist .bottom h1 {
-    font-weight: lighter;
+    .wishlist {
+      max-height: 90vh;
+      height: 90vh;
+      align-items: center;
+      display: inline-grid;
+      position: relative;
+      cursor: pointer;
+      img {
+        max-width: 100%;
+      }
+      .bottom {
+        bottom: 0;
+        position: absolute;
+        width: 100%;
+        span {
+          border: 1px solid #479c8e;
+          padding: 0.5em 1.5em;
+          a {
+            text-decoration: none;
+            color: #479c8e;
+            &:hover {
+              color: white;
+              background-color: #479c8e;
+            }
+          }
+          &:hover {
+            color: white;
+            background-color: #479c8e;
+          }
+        }
+        h1 {
+          font-weight: lighter;
+        }
+      }
+      &:hover {
+        background-color: #2a2a2a;
+      }
+      @media (max-width: $normalPhone) {
+        max-height: 50vh;
+        height: 50vh;
+      }
+    }
+    @media (max-width: $normalPhone) {
+      margin-top: 0;
+      grid-template-columns: repeat(1, 1fr);
+      grid-gap: 4em;
+    }
+  }
 }

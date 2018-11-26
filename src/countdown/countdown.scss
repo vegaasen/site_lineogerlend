@@ -1,3 +1,5 @@
+@import '../globals';
+
 .count-down-clock {
   margin: 25vh;
   text-align: center;
@@ -22,12 +24,28 @@
         font-size: 3.33rem;
         font-weight: 600;
         line-height: 1em;
+        @media (max-width: $normalPhone) {
+          font-size: 30px;
+          font-size: 2rem;
+        }
       }
       span {
         font-size: 14px;
         font-size: 0.77778rem;
         text-transform: uppercase;
       }
+      @media (max-width: $normalPhone) {
+        padding: 0;
+        width: auto;
+      }
     }
+    @media (max-width: $normalPhone) {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      padding: 50px;
+    }
+  }
+  @media (max-width: $normalPhone) {
+    margin: 25px 0;
   }
 }

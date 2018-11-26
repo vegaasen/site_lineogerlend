@@ -3,7 +3,7 @@ import TeaserComponent from '../teaser/TeaserComponent';
 import { faArrowCircleUp } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-import './footer.css';
+import './footer.scss';
 
 export default class FooterComponent extends React.Component {
   render () {

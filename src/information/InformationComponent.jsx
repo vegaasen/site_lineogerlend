@@ -1,8 +1,8 @@
 import * as React from 'react';
-import './information.css';
 import SectionComponent from '../SectionComponent';
 import EventComponent from './EventComponent';
 import Container from '../structure/Container';
+import './information.scss';
 
 const events = [
   {

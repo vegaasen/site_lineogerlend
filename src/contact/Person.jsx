@@ -1,7 +1,7 @@
 import * as React from 'react';
-import './person.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebookF, faTwitter } from '@fortawesome/free-brands-svg-icons'
+import './person.scss';
 
 const Person = (props) => {
   const extraStyles = props.imageTop ? {backgroundSize: '72%', backgroundColor: "#6f5349"} : {};

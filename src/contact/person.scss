@@ -1,0 +1,88 @@
+@import '../globals';
+
+.person {
+
+    .person--image {
+        overflow: hidden;
+        height: 350px;
+        background-size: cover;
+        background-position: top;
+        -webkit-transition: all 0.5s;
+        -moz-transition: all 0.5s;
+        -o-transition: all 0.5s;
+        -ms-transition: all 0.5s;
+        transition: all 0.5s;
+        -webkit-filter: grayscale(50%);
+        -moz-filter: grayscale(50%);
+        -o-filter: grayscale(50%);
+        filter: grayscale(50%);
+    }
+    .person--details {
+        background: #fff;
+        border: 1px solid #f3f2f2;
+        padding: 30px 15px 25px;
+        text-align: center;
+        -webkit-transition: all 0.3s;
+        -moz-transition: all 0.3s;
+        -o-transition: all 0.3s;
+        -ms-transition: all 0.3s;
+        transition: all 0.3s;
+        h3 {
+            font-size: 19px;
+            font-size: 1.05556rem;
+            font-weight: 600;
+            color: #3e3e3e;
+            margin: 0 0 0.3em;
+            text-transform: uppercase;
+        }
+        span {
+            font-size: 16px;
+            font-size: 0.88889rem;
+            color: #969494;
+            text-transform: capitalize;
+            display: block;
+        }
+        .social-links {
+            list-style-type: none;
+            padding-left: 0;
+            margin: 0;
+            overflow: hidden;
+            display: inline-block;
+            margin-top: 15px;
+            li {
+                float: left;
+                span {
+                    font-size: 0.77778rem;
+                    color: #7cafa5;
+                    display: block;
+                    text-align: center;
+                }
+                .social-element {
+                    border-radius: 50%;
+                    color: white;
+                    background-color: #7cafa5;
+                    padding: 7px;
+                    width: 16px !important;
+                    margin-right: 5px;
+                    transition: all .5s;
+                    &:hover {
+                        color: #7cafa5;
+                        background-color: white;
+                    }
+                }
+            }
+        }
+    }
+
+    &.person--huge {
+        margin-bottom: 2em;
+
+        .person--image {
+            height: 630px;
+            @media (max-width: $normalPhone) {
+                height: 205px;
+            }
+        }
+    }
+
+}

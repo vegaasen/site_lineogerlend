@@ -1,0 +1,14 @@
+@import '../globals';
+
+.back-to-top {
+  left: 49%;
+  margin-top: -16px;
+  position: absolute;
+  z-index: 1000;
+  a span {
+    color: white;
+    position: absolute;
+    -webkit-animation: pointerMoving 1.3s infinite;
+    animation: pointerMoving 1.3s infinite;
+  }
+}

@@ -11,7 +11,7 @@ import SectionComponent from './SectionComponent';
 import RSVPComponent from './information/RSVPComponent';
 import DrivingDirections from './information/DrivingDirections';
 
-import './App.css';
+import './App.scss';
 import 'typeface-great-vibes';
 import 'typeface-dosis';
 import CountdownTimer from './countdown/CountdownTimer';
@@ -26,10 +26,7 @@ class App extends Component {
           <InformationComponent/>
           <TeaserComponent image='/images/backdrop4.jpg' teaser='' margin={false} position='52% -85%'/>
           <Container green={true}>
-            <div>
-              <SectionComponent title="Svar utbedes" white={true}/>
-              <RSVPComponent/>
-            </div>
+            <RSVPComponent/>
           </Container>
           <Container>
             <WishlistsComponent/>
@@ -38,7 +35,6 @@ class App extends Component {
           <ContactComponent/>
           <CountdownTimer/>
           <Container green={true}>
-            <SectionComponent title="Overnatting" white={true}/>
             <DrivingDirections/>
           </Container>
           <FooterComponent/>

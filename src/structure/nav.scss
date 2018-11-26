@@ -1,0 +1,71 @@
+@import "../globals";
+
+nav {
+  display: block;
+  position: fixed;
+  width: 100%;
+  background-color: #ffffffde;
+  z-index: 9999;
+  top: 0;
+  border-bottom: 1px solid #ececec;
+  .menu {
+    display: flex;
+    justify-content: center;
+    margin: 1em 0.5em 0.5em;
+    .item--mid {
+      margin: 0 4em;
+    }
+    .nav--inline {
+      padding-left: 0;
+      margin-bottom: 0;
+      list-style: none;
+      margin: 0;
+      display: inline-block;
+      float: left;
+      li {
+        position: relative;
+        float: left;
+        a {
+          font-size: 18px;
+          font-size: 1rem;
+          font-weight: 600;
+          color: #413d3d;
+          padding: 35px 17px;
+          text-transform: uppercase;
+        }
+      }
+    }
+    h1 {
+      font-family: "Great Vibes", cursive;
+      font-size: 35px;
+      font-size: 1.94444rem;
+      margin: 0;
+      text-shadow: 1px 1px 2px #999999;
+      color: #5e9a8e;
+      svg {
+        color: #5e9a8e70;
+      }
+      span {
+        :first-child {
+          padding-right: 1em;
+        }
+        :last-child {
+          padding-left: 0.8em;
+        }
+      }
+    }
+    @media (max-width: $normalPhone) {
+      display: none;
+    }
+  }
+  .menu-slapped {
+    display: none;
+    @media (max-width: $normalPhone) {
+      display: block;
+    }
+  }
+  @media (max-width: $normalPhone) {
+    top: 0;
+    height: 0;
+  }
+}

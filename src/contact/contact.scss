@@ -1,0 +1,9 @@
+@import '../globals';
+
+.grooming {
+    width: 60vw;
+    margin: 0 auto;
+    @media (max-width: $normalPhone) {
+        width: auto;
+    }
+}

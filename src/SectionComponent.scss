@@ -1,0 +1,97 @@
+@import 'globals';
+
+.section {
+  overflow: hidden;
+  padding: 20px 0
+}
+
+.section-title {
+  text-align: center;
+  position: relative;
+  margin: 40px 0;
+  h2 {
+    font-family: "Great Vibes", cursive;
+    background-color: rgba(94, 154, 142, 0.1);
+    font-size: 46px;
+    font-size: 2.55556rem;
+    color: #848383;
+    margin: 59px 0 0;
+    padding: 10px 25px 5px;
+    border-top: 2px solid rgba(94, 154, 142, 0.1);
+    border-bottom: 2px solid rgba(94, 154, 142, 0.1);
+    display: inline-block;
+    text-transform: capitalize;
+    letter-spacing: 3px;
+    font-weight: normal;
+    @media (max-width: $normalPhone) {
+      width: 100vw;
+      padding: 10px 0 5px;
+    }
+  }
+  .vertical-line {
+    width: 18px;
+    height: 42px;
+    top: 0;
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    text-align: center;
+    span {
+      background: rgba(94, 154, 142, 0.2);
+      width: 2px;
+      height: 42px;
+      top: 17px;
+      position: absolute;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+      -moz-transform: translateX(-50%);
+      -o-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+      transform: translateX(-50%);
+      svg {
+        position: absolute;
+        left: -15px;
+        top: -36px;
+        color: #5e9a8e;
+        opacity: 0.5;
+      }
+    }
+    &::before {
+      content: "";
+      background: rgba(94, 154, 142, 0.2);
+      width: 45px;
+      height: 2px;
+      top: 16px;
+      position: absolute;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+      -moz-transform: translateX(-50%);
+      -o-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+      transform: translateX(-50%);
+    }
+  }
+  &.white {
+    h2 {
+      color: #fff;
+      background-color: rgba(255, 255, 255, 0.1);
+      border-top: 2px solid rgba(255, 255, 255, 0.1);
+      border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+    }
+    .vertical-line {
+      span {
+        background-color: rgba(255, 255, 255, 0.2);
+        svg {
+          color: rgb(255, 255, 255);
+        }
+      }
+      &::before {
+        background-color: rgba(255, 255, 255, 0.2)
+      }
+    }
+  }
+}

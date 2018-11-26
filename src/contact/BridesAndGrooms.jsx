@@ -23,12 +23,12 @@ export default class BridesAndGrooms extends React.PureComponent {
 
   render () {
     return (
-      <div id='toastmaster'>
+      <>
         <div className='tabs'>
           <Toastmaster/>
           <Bridespeople/>
         </div>
-      </div>
+      </>
     );
   }
 
