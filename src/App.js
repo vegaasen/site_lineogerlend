@@ -7,7 +7,6 @@ import WishlistsComponent from './wishlist/WishlistsComponent';
 import ContactComponent from './contact/ContactComponent';
 import TeaserComponent from './teaser/TeaserComponent';
 import Container from './structure/Container';
-import SectionComponent from './SectionComponent';
 import RSVPComponent from './information/RSVPComponent';
 import DrivingDirections from './information/DrivingDirections';
 

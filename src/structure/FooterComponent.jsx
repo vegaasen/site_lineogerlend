@@ -10,7 +10,7 @@ export default class FooterComponent extends React.Component {
     return (
       <div>
         <div className="back-to-top">
-          <a href="#" className="back-to-top-btn"><span><FontAwesomeIcon icon={faArrowCircleUp} size='2x' /></span></a>
+          <a href="#top" className="back-to-top-btn"><span><FontAwesomeIcon icon={faArrowCircleUp} size='2x' /></span></a>
         </div>
         <TeaserComponent image='/images/footer1.jpeg' caption='gleder oss ❤️' subCaption='- Line &amp; Erlend' bold={false} margin={false} position='52% -60%'/>
       </div>

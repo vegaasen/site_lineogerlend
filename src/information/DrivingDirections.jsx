@@ -1,6 +1,6 @@
 import * as React from 'react';
-import './drivingDirections.scss';
 import SectionComponent from '../SectionComponent';
+import './drivingDirections.scss';
 
 const DrivingDirections = () => {
   return (
@@ -10,7 +10,7 @@ const DrivingDirections = () => {
         <div className='details--element details__left'>
           <h3>Staur gård</h3>
           <p>
-            Vi håper flest mulig velger å overnatte på Staur gård hvor vi også overnatter 😊.
+            Vi håper flest mulig velger å overnatte på Staur gård hvor vi også overnatter <span role='img' aria-label='smiley'>😊</span>.
             <br/>
             Da er brunsj dagen derpå inkludert i prisen.
             <br/>
@@ -20,7 +20,7 @@ const DrivingDirections = () => {
             <a href="tel:415 71 222">415 71 222</a>
           </p>
           <p>
-            For mer info se <a href="http://www.staur.no" target="_blank">staur.no</a>
+            For mer info se <a href="http://www.staur.no" target="_blank" rel="noopener noreferrer">staur.no</a>
           </p>
         </div>
         <div className='details--element details__right'>
