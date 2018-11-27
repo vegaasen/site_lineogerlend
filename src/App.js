@@ -10,11 +10,11 @@ import Container from './structure/Container';
 import RSVPComponent from './information/RSVPComponent';
 import DrivingDirections from './information/DrivingDirections';
 import ReactGA from 'react-ga';
-
-import './App.scss';
+import CountdownTimer from './countdown/CountdownTimer';
 import 'typeface-great-vibes';
 import 'typeface-dosis';
-import CountdownTimer from './countdown/CountdownTimer';
+
+import './App.scss';
 
 const initializeReactGA = () => {
   ReactGA.initialize('UA-129862709-1');

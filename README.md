@@ -1,3 +1,10 @@
-### Inspiration
+Line & Erlend
+===
 
-* http://irsfoundation.com/tf/templates/wedding/lovely-wedding/lovely-wedding/index-3.html
+## Introduction
+
+The site http://www.lineogerlend.no is hosted at Github.
+
+## Technologies
+
+- React
