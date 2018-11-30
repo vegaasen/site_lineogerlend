@@ -31,9 +31,7 @@ export default class EventComponent extends React.Component {
             <li><a href={this.props.location.link}><span className='event-icon'><FontAwesomeIcon icon={faMapMarker}/></span> {this.props.location.caption}</a></li>
             <li><span className='event-icon'><FontAwesomeIcon icon={faClock}/></span> {this.props.when}</li>
           </ul>
-          <p>
-            {this.props.description}
-          </p>
+          <p dangerouslySetInnerHTML={{ __html: this.props.description }}/>
           <a href={this.props.location.link}>Gå til kart <FontAwesomeIcon icon={faAngleRight}/></a>
         </div>
       </div>

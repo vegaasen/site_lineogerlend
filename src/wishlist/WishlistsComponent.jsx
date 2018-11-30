@@ -2,6 +2,7 @@ import * as React from 'react';
 import WishlistComponent from './WishlistComponent';
 import SectionComponent from '../SectionComponent';
 import './wishlist.scss';
+import Message from '../Message';
 
 const wishlists = [
   {title: 'Illums', link: {to: '', caption: 'Illums'}, image: '/images/wishlists/illums.png', size: '70%'},
@@ -14,9 +15,7 @@ export default class WishlistsComponent extends React.Component {
     return (
       <div className='wishlist__wrapper' id='wishlist'>
         <SectionComponent title='Ønskelister'/>
-        <p className='tc'>
-          Dette er et utvalg av det vi ønsker oss til vårt bryllup. (mer tekst?)
-        </p>
+        <Message message='Listene kommer, så STAY TUNED' icon='😎'/>
         <section className='wishlists'>
           {wishlists.map((wishlist, i) => <WishlistComponent key={i} {...wishlist} />)}
         </section>

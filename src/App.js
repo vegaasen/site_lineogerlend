@@ -9,7 +9,7 @@ import TeaserComponent from './teaser/TeaserComponent';
 import Container from './structure/Container';
 import RSVPComponent from './information/RSVPComponent';
 import DrivingDirections from './information/DrivingDirections';
-import ReactGA from 'react-ga';
+import * as ReactGA from 'react-ga';
 import CountdownTimer from './countdown/CountdownTimer';
 import 'typeface-great-vibes';
 import 'typeface-dosis';
@@ -19,7 +19,7 @@ import './App.scss';
 const initializeReactGA = () => {
   ReactGA.initialize('UA-129862709-1');
   ReactGA.pageview('/index.html');
-  console.info("Initializing GA")
+  console.info('Initializing GA')
 };
 
 initializeReactGA();

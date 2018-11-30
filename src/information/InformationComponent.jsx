@@ -12,7 +12,7 @@ const events = [
       link: 'https://goo.gl/maps/Ct33Zi3u3Km',
     },
     when: '17 August 2019, 15:00',
-    description: '(Erlend! trenger tekster! :P)',
+    description: '',
     image: '/images/placement/vangkirka.jpg',
   },
   {
@@ -22,7 +22,7 @@ const events = [
       link: 'https://goo.gl/maps/maVSb6hyoWH2',
     },
     when: '17 August 2019, 16:30',
-    description: '(Erlend! trenger tekster! :P)',
+    description: 'Vi håper at dere som behøver overnatting overnatter her. For informasjon kring overnatting, gå <a href="#spendTheNight">lenger ned</a> på siden. Se også gjerne på <a href="http://www.staur.no" target="_blank">staur.no</a> for mer informasjon rundt gården.',
     image: '/images/placement/staur.jpg',
   },
 ];

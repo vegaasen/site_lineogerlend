@@ -1,0 +1,14 @@
+.message {
+  width: 100%;
+  &.message--white {
+    .message--internal {
+      background-color: #ffffff59;
+    }
+  }
+  .message--internal {
+    width: 60%;
+    background-color: #5e9a8e7a;
+    margin: 0 auto;
+    padding: 1em;
+  }
+}

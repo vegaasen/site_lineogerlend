@@ -5,7 +5,7 @@ import './bridesandgrooms.scss';
 const forlovede = [
   {name: 'Thea Tomter', title: 'Forlover', image: '/images/people/thea.jpg', social: {facebook: '', twitter: ''}},
   {name: 'Ragnhild Granli', title: 'Forlover', image: '/images/people/raggen.jpg', imageTop: '-159px', social: {facebook: '', twitter: ''}},
-  {name: 'Thomas Mathiassen', title: 'Forlover', image: '/images/people/thomas.jpg', social: {facebook: '', twitter: ''}},
+  {name: 'Thomas Mathiassen', title: 'Forlover', image: '/images/people/thomas2.jpg', social: {facebook: '', twitter: ''}},
   {name: 'Vegard Aasen', title: 'Forlover', image: '/images/people/vegard.jpg', social: {facebook: '', twitter: ''}},
 ];
 
@@ -42,4 +42,4 @@ export class Bridespeople extends React.PureComponent {
 
 }
 
-const Toastmaster = props => <Person {...toastmaster} huge={true}/>;
+const Toastmaster = () => <Person {...toastmaster} huge={true}/>;
