@@ -11,7 +11,7 @@ const Person = (props) => {
       <div className='person--details'>
         <h3>{props.name}</h3>
         <span>{props.title}</span>
-        {props.description && <p>{props.description}</p>}
+        {props.description && <p dangerouslySetInnerHTML={{ __html: props.description }}></p>}
         <ul className='social-links'>
           <li><a href='#'><FontAwesomeIcon className='social-element' icon={faFacebookF} /></a></li>
           <li><a href='#'><FontAwesomeIcon className='social-element' icon={faTwitter} /></a></li>

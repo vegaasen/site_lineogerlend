@@ -1,14 +1,25 @@
 @import '../globals';
 
-.back-to-top {
-  left: 49%;
-  margin-top: -16px;
-  position: absolute;
-  z-index: 1000;
-  a span {
-    color: white;
+.footer {
+  .back-to-top {
+    left: 49%;
+    margin-top: -16px;
     position: absolute;
-    -webkit-animation: pointerMoving 1.3s infinite;
-    animation: pointerMoving 1.3s infinite;
+    z-index: 1000;
+    a span {
+      color: white;
+      position: absolute;
+      -webkit-animation: pointerMoving 1.3s infinite;
+      animation: pointerMoving 1.3s infinite;
+    }
+  }
+  .studio {
+    font-size: 0.7em;
+    background-color: #525252;
+    color: white;
+    a {
+      color: white;
+      text-decoration: none;
+    }
   }
 }

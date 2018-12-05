@@ -12,11 +12,9 @@ const forlovede = [
 const toastmaster = {
   name: 'Hans Henrik',
   title: 'Toastmaster 🍾',
-  description: `
-  For innmelding av taler og lignende, kontakt Hans Henrik.
-  `,
+  description: `For innmelding av taler og lignende, kontakt Hans Henrik på <a href="tel:+4799596497">+47 995 96 497</a>.`,
   image: '/images/people/hansh2.jpg',
-  social: {},
+  social: {phone: ''},
 };
 
 export default class BridesAndGrooms extends React.PureComponent {

@@ -16,7 +16,7 @@
     -o-filter: grayscale(50%);
     filter: grayscale(50%);
     @media (max-width: $normalPhone) {
-      height: 350px;
+      height: 550px;
     }
   }
   .person--details {
@@ -29,6 +29,15 @@
     -o-transition: all 0.3s;
     -ms-transition: all 0.3s;
     transition: all 0.3s;
+    a {
+      color: #5e9a8e;
+      display: inline-block;
+      margin-top: 5px;
+      text-decoration: none;
+      -webkit-transition: all 0.2s;
+      transition: all 0.2s;
+      background-color: transparent;
+    }
     h3 {
       font-size: 19px;
       font-size: 1.05556rem;
@@ -83,6 +92,7 @@
       height: 630px;
       @media (max-width: $normalPhone) {
         height: 600px;
+        background-position-x: right;
       }
     }
   }

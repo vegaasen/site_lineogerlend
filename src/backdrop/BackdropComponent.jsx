@@ -2,9 +2,7 @@ import * as React from 'react';
 import { Fragment } from 'react';
 import './backdrop.scss';
 
-export default class BackdropComponent extends React.Component {
-
-  render () {
+const BackdropComponent = () => {
     return (
       <Fragment>
         <div className='backdrop'>
@@ -20,6 +18,6 @@ export default class BackdropComponent extends React.Component {
         </div>
       </Fragment>
     );
-  }
+};
 
-}
+export default BackdropComponent

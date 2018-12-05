@@ -44,14 +44,7 @@ nav {
       color: #5e9a8e;
       svg {
         color: #5e9a8e70;
-      }
-      span {
-        :first-child {
-          padding-right: 1em;
-        }
-        :last-child {
-          padding-left: 0.8em;
-        }
+        padding: 0 1em;
       }
     }
     @media (max-width: $normalPhone) {

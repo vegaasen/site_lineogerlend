@@ -34,11 +34,7 @@ export default class NavComponent extends React.Component {
             </ul>
           </div>
           <div className='item item--mid tc'>
-            <h1>
-              <span className='first'>L</span>
-              <span><FontAwesomeIcon icon={faHeart}/>️</span>
-              <span className='second'>E</span>
-            </h1>
+            <h1>L<FontAwesomeIcon icon={faHeart}/>️E</h1>
           </div>
           <div className='item tc'>
             <ul className='nav--inline la'>

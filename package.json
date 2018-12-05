@@ -12,13 +12,14 @@
     "react-countdown-now": "^1.3.0",
     "react-dom": "^16.6.3",
     "react-ga": "^2.5.5",
+    "react-screen-orientation": "^0.0.3",
     "react-scripts": "2.1.1",
     "typeface-dosis": "^0.0.54",
     "typeface-great-vibes": "^0.0.54"
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "rm -rf build/ && react-scripts build",
     "test": "react-scripts test"
   },
   "eslintConfig": {

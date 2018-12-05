@@ -8030,6 +8030,11 @@ react-ga@^2.5.5:
   resolved "https://registry.yarnpkg.com/react-ga/-/react-ga-2.5.5.tgz#b809c41d5964125fb4ce7bf480abe76d845c4f89"
   integrity sha512-qqbv0nzSa33T1HWJuJWwNb2kn2BjJq35MJtHwiV2RGC5/OzBXM3qoH95bzl830Nj8ncUE42YhChGt+y/WojSVQ==
 
+react-screen-orientation@^0.0.3:
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/react-screen-orientation/-/react-screen-orientation-0.0.3.tgz#ae8482f9823b088b9b1790004509311f4cebc6f3"
+  integrity sha512-M7wI/uyv2vP+6ZNcw3Bp30NVf8xyST2k66wghYvE+8+/NExRxAcHiJs2FzJBUcIjMJs0YgCn1KxSvtIao3Luyw==
+
 react-scripts@2.1.1:
   version "2.1.1"
   resolved "https://registry.yarnpkg.com/react-scripts/-/react-scripts-2.1.1.tgz#c2959a756b0b61d3090adece0d7aedd324dff8a5"
