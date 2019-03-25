@@ -28,7 +28,6 @@ class App extends Component {
   render () {
     return (
       <>
-        <div>Ops - telefonen vil helst være i den trygge portrett-baserte modusen når denne siden vises 📱 😎</div>
         <div className="App" id='home'>
           <NavComponent/>
           <BackdropComponent/>

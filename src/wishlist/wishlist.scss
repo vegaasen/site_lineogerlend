@@ -20,6 +20,20 @@
       display: inline-grid;
       position: relative;
       cursor: pointer;
+      &.simple {
+        cursor: default;
+        h1 {
+          font-size: 1.8em;
+          font-family: "Dosis", sans-serif;
+          font-weight: normal;
+          small {
+            font-size: 0.6em;
+          }
+        }
+        &:hover {
+          background-color: white;
+        }
+      }
       img {
         max-width: 100%;
       }

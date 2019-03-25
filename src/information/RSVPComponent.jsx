@@ -6,7 +6,7 @@ import Message from '../Message';
 
 const persons = [
   {name: 'Erlend', contact: {mail: 'e_rostad@hotmail.com', phone: '+47 909 98 299'}},
-  {name: 'Line', contact: {mail: 'lundbyline@gmail.com', phone: '+47 472 85 575'}},
+  {name: 'Line', contact: {mail: 'line_lundby91@hotmail.com', phone: '+47 472 85 575'}},
 ];
 
 const RSVPComponent = () => {
