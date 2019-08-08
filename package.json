@@ -9,7 +9,7 @@
     "@fortawesome/react-fontawesome": "^0.1.4",
     "@sentry/browser": "^4.6.5",
     "react": "^16.8.5",
-    "react-app-polyfill": "^0.2.2",
+    "react-app-polyfill": "^1.0.1",
     "react-countdown-now": "^2.1.0",
     "react-dom": "^16.8.5",
     "react-ga": "^2.5.7",
