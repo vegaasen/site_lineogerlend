@@ -11,7 +11,7 @@ const events = [
       caption: 'Vangsvegen 358, 2322 Ridabu',
       link: 'https://goo.gl/maps/Ct33Zi3u3Km',
     },
-    when: '17 August 2019, 14:30',
+    when: '17 August 2019, 15:00',
     description: '',
     image: '/images/placement/vangkirka.jpg',
   },

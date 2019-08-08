@@ -12,3 +12,14 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.ie-sucks {
+  color: #7cafa5;
+  text-align: center;
+  width: 100%;
+  padding: 10px;
+  position: fixed;
+  z-index: 9999;
+  top: 65px;
+  background-color: #ffffff;
+}

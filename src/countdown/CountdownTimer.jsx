@@ -28,7 +28,7 @@ const CountdownTimer = () => {
     }
   };
   return <div className='count-down-clock'>
-    <Countdown date={new Date(2019, 7, 17, 14, 30, 0)} renderer={renderer}/>
+    <Countdown date={new Date(2019, 7, 17, 15, 0, 0)} renderer={renderer}/>
   </div>;
 };
 
