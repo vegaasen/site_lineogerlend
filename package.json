@@ -14,7 +14,7 @@
     "react-dom": "^16.8.6",
     "react-ga": "^2.6.0",
     "react-screen-orientation": "^0.0.3",
-    "react-scripts": "3.0.1",
+    "react-scripts": "3.1.0",
     "typeface-dosis": "^0.0.72",
     "typeface-great-vibes": "^0.0.72"
   },
