@@ -11,7 +11,7 @@
     "react": "^16.8.6",
     "react-app-polyfill": "^1.0.1",
     "react-countdown-now": "^2.1.0",
-    "react-dom": "^16.8.6",
+    "react-dom": "^16.10.1",
     "react-ga": "^2.6.0",
     "react-screen-orientation": "^0.0.3",
     "react-scripts": "3.0.1",
